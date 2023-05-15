@@ -1,12 +1,7 @@
 name: Unit tests
 
 on:
-  pull_request:
-    paths:
-      - '.github/workflows/**'
-      - 'src/**'
-      - 'utest/**'
-      - '!**/*.rst'
+  workflow_dispatch:
 
 jobs:
   test_using_builtin_python:
